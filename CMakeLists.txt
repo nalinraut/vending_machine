@@ -15,10 +15,12 @@ include_directories(
 set(sources src/main.cpp 
             src/vending_machine.cpp 
             src/vending_machine_implementation.cpp
-            src/exception.cpp
-            src/cash.cpp
             src/item.cpp
+            src/cash.cpp
+            src/exception.cpp
 )
+
+
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
 

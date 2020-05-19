@@ -51,7 +51,7 @@ int main (){
                 continue;
             }  
             //------------------------------------------------------------------
-            std::cout << "[TESTING]: Click 0 for Dollar 1 bill."<<std::endl;
+            std::cout << "[TESTING]: Enter 1.0 [Denomination of 1 Dollar bill]"<<std::endl;
             std::cout << "INSERT CASH. ACCEPTS ONLY 1 DOLLAR BILLS. CASH: ";
             std::cin >> cash; 
             std::cout << "NUMBER OF BILLS: ";
@@ -83,7 +83,7 @@ int main (){
                 std::cout <<"\n* Admin mode *"<<std::endl;
                 std::cout <<"Select from the following: "<<std::endl;
                 std::cout << "0 Exit Admin Mode \n1 Add Product \n2 Add Item to Inventory \n"
-                            "3 Get Balance \n4 Get Total Sales" << std::endl;
+                            "3 Remove Product\n 4 Remove Item \n5 Get Total Sales" << std::endl;
                 std::cout <<"Admin option: ";
                 std::cin >> admin_option;
                 if (admin_option == 1) {
@@ -133,6 +133,11 @@ int main (){
 
                 }
                 else if (admin_option == 4) {
+                    double balance = vm->getBalance();
+                    std::cout<<"Current Balance in USD: "<<balance<<std::endl;
+
+                }
+                else if (admin_option == 5) {
                     double total_sales = vm->getTotalSales();
                     std::cout<<"Total sales in USD: "<<total_sales<<std::endl;
 

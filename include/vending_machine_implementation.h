@@ -133,7 +133,7 @@ public:
     double getTotalSales() const;
 
     /**
-     * Gets the balance
+     * Gets the balance in the machine
     */
     double getBalance() const;
 

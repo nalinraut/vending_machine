@@ -63,8 +63,7 @@ double VendingMachineImplementation::selectItemAndGetPrice(const Item& item) {
 }
 
 void VendingMachineImplementation::insertCash(const Cash& cash, const int& bills) {
-    std::cout << _curr_balance <<std::endl;
-    std::cout<<cash.getDenomination()<<std::endl;
+
     _curr_balance = cash.getDenomination()*bills;
     _cash_inventory->add(cash,bills);
 }

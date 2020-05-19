@@ -36,7 +36,19 @@ The main program in under the `src` directory.
 - `item.h`and `item.cpp` - Implements the user defined item data type
 - `types.h` - Defines commmonly user data types
 
+## TEST SCREENSHOTS
 
+![alt text](assets/test0.png "COLLECT ITEM")
+
+The user selects item, pays cash, and collects the item.
+
+![alt text](assets/test1.png "COLLECT ITEM")
+
+The admin adds new product SPRITE to the product list (dynamic enumeration)
+
+![alt text](assets/test2.png "COLLECT ITEM")
+
+The new product being displayed to the user.
 
 ## Dependencies
 
